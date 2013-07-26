@@ -8,3 +8,4 @@
 
 /subjects CreateSubjectR POST
 /subjects/#SubjectId SubjectR GET
+/snapshots CreateSnapshotsR POST

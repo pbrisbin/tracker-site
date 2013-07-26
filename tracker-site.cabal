@@ -23,6 +23,7 @@ library
                      Handler.Home
                      Handler.CreateSubject
                      Handler.Subject
+                     Handler.CreateSnapshots
 
     if flag(dev) || flag(library-only)
         cpp-options:   -DDEVELOPMENT
@@ -74,6 +75,7 @@ library
                  , monad-logger                  >= 0.3
                  , fast-logger                   >= 0.3
                  , time
+                 , tracker
 
 executable         tracker-site
     if flag(library-only)
