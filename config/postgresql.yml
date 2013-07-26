@@ -1,0 +1,24 @@
+Default: &defaults
+  user: tracker
+  password: tracker
+  host: localhost
+  port: 5432
+  database: tracker
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: tracker-site_test
+  <<: *defaults
+
+Staging:
+  database: tracker-site_staging
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: tracker-site_production
+  poolsize: 100
+  <<: *defaults
